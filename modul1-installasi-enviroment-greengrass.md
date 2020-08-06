@@ -7,7 +7,7 @@ Instalasi dalam CLI
 	$ sudo adduser --system ggc_user \
 	$ sudo addgroup --system ggc_group 
 	```
-3. Masuk ke folder <b>/etc/sysctl.d</b> dan edit file <b>98-rpi.conf</b> dengan perintah:
+3. Masuk ke folder ```/etc/sysctl.d``` dan edit file <b>98-rpi.conf</b> dengan perintah:
 	```
 	$ cd /etc/sysctl.d
 	$ sudo nano 98-rpi.conf 
