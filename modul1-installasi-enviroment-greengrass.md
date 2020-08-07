@@ -1,12 +1,16 @@
-## Install enviroment iot greengrass pada raspberry pi
+## Install Enviroment IoT Greengrass pada Raspberry Pi
 
 Instalasi dalam CLI
-1. Pertama masuk ke ssh raspi
-
-2. Masukin inputan seperti berikut:
+1. Pertama masuk ke ssh raspi dengan perintah:
 
 	```
-	$ sudo adduser --system ggc_user \
+	$ ssh pi@{nomor IP raspi} 
+	```
+
+2. Tulis perintah seperti berikut:
+
+	```
+	$ sudo adduser --system ggc_user
 	$ sudo addgroup --system ggc_group 
 	```
 
@@ -17,26 +21,26 @@ Instalasi dalam CLI
 	$ sudo nano 98-rpi.conf 
 	```
 
-4. Masukin 2 baris perintah diakhir file
+4. Tulis 2 baris perintah diakhir file
 
 	```
 	fs.protected_hardlinks = 1
 	fs.protected_symlinks = 1 
 	```
 
-5. Setelah itu Re-boot raspi dengan perintah:
+5. Re-boot raspi dengan perintah:
 
 	```
 	$ sudo reboot 
 	```
 
-6. Setelah beberapa menit, masuk ke ssh raspi dan masukan perintah berikut:
+6. Setelah beberapa menit, masuk ke ssh raspi dan tulis perintah berikut:
 
 	```
 	$ sudo sysctl -a 2> /dev/null | grep fs.protected 
 	```
 
-7. Selanjutnya masuk ke folder ```/boot``` dengan perintah:
+7. Masuk ke folder ```/boot``` dengan perintah:
 
 	```
 	$ cd /boot/ 
@@ -48,13 +52,13 @@ Instalasi dalam CLI
 	cgroup_enable=memory cgroup_memory=1 
 	```
 
-9. Setelah itu Re-boot raspi dengan perintah:
+9. Re-boot raspi dengan perintah:
 
 	```
 	$ sudo reboot 
 	```
 
-10. Install Java 8 runtime untuk kebutuhan ```stream manager``` dengan perintah:
+10. Install Java 8 runtime untuk kebutuhan ```Stream Manager``` dengan perintah:
 
 	```
 	$ sudo apt install openjdk-8-jdk 
