@@ -63,12 +63,23 @@ Instalasi dalam CLI
 11. To make sure that you have all required dependencies, download and run the Greengrass dependency checker from the <link>https://github.com/aws-samples/aws-greengrass-samples</link>. These commands unzip and run the dependency checker script in the ```Downloads``` directory
 
 	```
-	cd /home/pi/Downloads
-	mkdir greengrass-dependency-checker-GGCv1.10.x
-	cd greengrass-dependency-checker-GGCv1.10.x
-	wget https://github.com/aws-samples/	aws-greengrass-samples/raw/master/greengrass-dependency-checker-GGCv1.10.x.zip
-	unzip greengrass-dependency-checker-GGCv1.10.x.zip
-	cd greengrass-dependency-checker-GGCv1.10.x
-	sudo modprobe configs
-	sudo ./check_ggc_dependencies | more 
+	$ cd /home/pi/Downloads
+	$ mkdir greengrass-dependency-checker-GGCv1.10.x
+	$ cd greengrass-dependency-checker-GGCv1.10.x
+	$ wget https://github.com/aws-samples/	aws-greengrass-samples/raw/master/greengrass-dependency-checker-GGCv1.10.x.zip
+	$ unzip greengrass-dependency-checker-GGCv1.10.x.zip
+	$ cd greengrass-dependency-checker-GGCv1.10.x
+	$ sudo modprobe configs
+	$ sudo ./check_ggc_dependencies | more 
+	```
+
+12. Jika Java 8 atau NodeJS 12 tidak kedeteksi, maka harus merubah nama binaries fungsi ```java``` dan ```node``` dengan perintah:
+
+	```
+	NodeJS:
+	$ cd /usr/bin
+	$ sudo mv node nodejs12.x
+	Java:
+	$ cd /usr/bin
+	$ sudo mv java java8
 	```
