@@ -1,6 +1,6 @@
-## Install Enviroment IoT Greengrass pada Raspberry Pi
+## Kofigurasi Enviroment IoT Greengrass pada Raspberry Pi
 
-Instalasi dalam CLI
+Konfigurasi dalam CLI
 1. Pertama masuk ke ssh raspi dengan perintah:
 
 	```
@@ -64,13 +64,13 @@ Instalasi dalam CLI
 	$ sudo apt install openjdk-8-jdk 
 	```
 	
-11. To make sure that you have all required dependencies, download and run the Greengrass dependency checker from the <link>https://github.com/aws-samples/aws-greengrass-samples</link>. These commands unzip and run the dependency checker script in the ```Downloads``` directory
+11. Download script checker untuk mengecek dependensi apa saja yang terpenuhi di <link>https://github.com/aws-samples/aws-greengrass-samples</link>. lalu ekstrak di folder ```Downloads``` dengan perintah:
 
 	```
 	$ cd /home/pi/Downloads
 	$ mkdir greengrass-dependency-checker-GGCv1.10.x
 	$ cd greengrass-dependency-checker-GGCv1.10.x
-	$ wget https://github.com/aws-samples/	aws-greengrass-samples/raw/master/greengrass-dependency-checker-GGCv1.10.x.zip
+	$ wget https://github.com/aws-samples/aws-greengrass-samples/raw/master/greengrass-dependency-checker-GGCv1.10.x.zip
 	$ unzip greengrass-dependency-checker-GGCv1.10.x.zip
 	$ cd greengrass-dependency-checker-GGCv1.10.x
 	$ sudo modprobe configs
