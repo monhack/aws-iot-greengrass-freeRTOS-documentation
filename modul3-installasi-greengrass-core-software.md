@@ -1,4 +1,4 @@
-## Install IoT Greengrass Core Software pada Raspberry Pi
+## Instalasi IoT Greengrass Core Software pada Raspberry Pi
 
 ```Note : Harus lakuin step pada modul2 dulu```
 
@@ -11,7 +11,7 @@ Instalasi dalam CLI
 2. Download IoT Greengrass Core Software lalu ekstrak dengan perintah:
 	```
 	$ wget https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.2/greengrass-linux-armv7l-1.10.2.tar.gz
-	$ tar -xzvf greengrass-linux-armv7l-1.10.2.tar.gz
+	$ sudo tar -xzvf greengrass-linux-armv7l-1.10.2.tar.gz -C /
 	```
 
 2. Download keyring untuk update GPG key dan ekstrak dengan perintah:
@@ -36,8 +36,14 @@ Instalasi dalam CLI
 	$ sudo wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem 
 	```
 
-5. Re-boot raspi dengan perintah:
+5. Jalankan IoT Greengrass dengan perintah:
 
 	```
-	$ sudo reboot 
+	$ cd /greengrass/ggc/core
+	$ sudo ./greengrassd start
+	```
+
+6. Untuk memastikan program jalan/tidak:
+	```
+	$ ps aux | grep PID-number
 	```
