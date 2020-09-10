@@ -1,12 +1,12 @@
 ## Instalasi IoT Greengrass Core Software pada Raspberry Pi
 
-```Note : Harus lakuin step pada modul2 dulu```
+```Note : Harus lakuin step pada modul1 dan modul2 dulu```
 
 Instalasi dalam CLI
 1. Pertama masuk ke ssh raspi dengan perintah:
 
 	```
-	$ ssh pi@{nomor IP raspi} /
+	$ ssh pi@{nomor IP raspi}
 	```
 2. Download IoT Greengrass Core Software lalu ekstrak dengan perintah:
 	```
