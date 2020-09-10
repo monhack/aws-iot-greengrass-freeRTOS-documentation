@@ -2,7 +2,7 @@
 
 1. Masuk ke [AWS Management Console](https://console.aws.amazon.com/) (bebas mau pake akun IAM atau superuser) di komputer Anda dan buka console AWS IoT
 
-2. Di panel navigasi, pilih <b>Greengrass<b>.
+2. Di panel navigasi, pilih <b>Greengrass</b>.
 
 3. Pada halaman <b>Selamat Datang di AWS IoT Greengrass<b>, pilih <b>Create Group</b>.
 
