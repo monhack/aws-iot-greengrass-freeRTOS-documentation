@@ -4,7 +4,7 @@
 
 2. Di panel navigasi, pilih <b>Greengrass</b>.
 
-3. Pada halaman <b>Selamat Datang di AWS IoT Greengrass<b>, pilih <b>Create Group</b>.
+3. Pada halaman <b>Selamat Datang di AWS IoT Greengrass</b>, pilih <b>Create Group</b>.
 
 4. Setelah masuk ke halaman <b>Greengrass needs your permission to access other services dialog box</b>, pilih <b>Grant Permission</b>
 
@@ -19,5 +19,3 @@
 9. Download semua file yang dibutuhkan (cert, private dan public key), pilih <b>Download these resources as a tar.gz</b>. Skip dulu bagian <b>Choose a root CA</b>
 
 10. Setelah download file tersebut, lalu pilih <b>Finish</b>
-
-11. Di panel navigasi, pilih <b>Greengrass -> <b>
