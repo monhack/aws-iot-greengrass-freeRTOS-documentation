@@ -11,6 +11,7 @@
   	![AddExtService](images/freertos_download.png)
 
 4. Install AWS CLI terlebih dahulu, lalu konfigurasi AWS CLI dengan memasukkan AWS access key ID, secret access key, and default region name. Contoh dapat dilihat di [Konfigurasi AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+
 <b>Note: kalau pake akun IAM minta AWS access key ID, secret access key, and default region name sama yang megang akun utama(superuser)</b>
 	
 	```
