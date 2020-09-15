@@ -5,9 +5,9 @@
 Setting pada IoT Core
 1. Pertama masuk ke [AWS Management Console](https://console.aws.amazon.com/), lalu buka IoT Core. Selanjutnya buka:
 
-	```
+	<b>```
 	Greengrass -> Group -> pilih group -> Devices -> Add Device -> Create new device
-	```
+	```</b>
 
 2. Ketik name untuk device (ex. Raspberry Pi), klik <b>Next</b>
 
