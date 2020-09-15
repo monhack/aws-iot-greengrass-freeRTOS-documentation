@@ -61,11 +61,10 @@ Setting pada IoT Core
 	$ tar -xzvf {hash}-setup.tar.gz
 	$ wget -O root-ca-cert.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
 	```
-
+  	![AddExtService](images/greengrass_directory.png)
 11. Jalankan script ```trafficLight.py``` agar dapat subscribe data dari esp32 (freertos)
 <b>Note : melihat endpoitnya di AWS Console -> IoT Core -> Test -> View endpoint</b>  
 
 	```
 	$ python trafficLight.py --endpoint axkpps0upkdjx-ats.iot.us-east-2.amazonaws.com --rootCA root-ca-cert.pem --cert {hash}-certificate.pem.crt --key {hash}-private.pem.key --thingName thingname-raspi --clientId thingname-raspi
 	```
-  
