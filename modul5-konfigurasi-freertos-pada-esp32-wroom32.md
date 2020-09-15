@@ -1,5 +1,6 @@
 ## Kofigurasi amazon freertos pada ESP32 WROOM32
-- <b>Note: harus setting permission terlebih dahulu di [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/) yaitu ```AmazonFreeRTOSFullAccess``` dan ```AWSIoTFullAccess```, lalu harus melakukan langkah langkah pada modul 1-4</b>
+<b>Note:</b>
+- <b>harus setting permission terlebih dahulu di [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/) yaitu ```AmazonFreeRTOSFullAccess``` dan ```AWSIoTFullAccess```, lalu harus melakukan langkah langkah pada modul 1-4</b>
 - <b>Device yang digunakan yaitu ESP32-DevKitC</b>
 
 1. Konfigurasi Espressif Hardware di [Setting Espressif Hardware](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#step-1-install-prerequisites), lakukan semua instruksinya
