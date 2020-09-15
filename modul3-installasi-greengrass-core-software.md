@@ -8,6 +8,7 @@ Instalasi dalam CLI
 	```
 	$ ssh pi@{nomor IP raspi}
 	```
+	
 2. Download IoT Greengrass Core Software lalu ekstrak dengan perintah:
 	```
 	$ wget https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/1.10.2/greengrass-linux-armv7l-1.10.2.tar.gz
