@@ -37,6 +37,7 @@
 	```
 
 3. Setelah itu baru ```cmake``` programnya
+	<b>Note: [Cmake buat windows](https://docs.aws.amazon.com/freertos/latest/userguide/building-cmake.html)</b>
 
 	```
 	$ cd ~/Downloads/freertos/
