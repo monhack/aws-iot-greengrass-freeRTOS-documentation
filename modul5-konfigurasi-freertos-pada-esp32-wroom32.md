@@ -2,6 +2,7 @@
 <b>Note:</b>
 - <b>harus setting permission terlebih dahulu di [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/) yaitu ```AmazonFreeRTOSFullAccess``` dan ```AWSIoTFullAccess```, lalu harus melakukan langkah langkah pada modul 1-4</b>
 - <b>Device yang digunakan yaitu ESP32-DevKitC</b>
+- <b>Semua step pada modul 5 dilakukan pada PC/laptop</b>
 
 1. Konfigurasi Espressif Hardware di [Setting Espressif Hardware](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#step-1-install-prerequisites), lakukan semua instruksinya
 
@@ -30,6 +31,7 @@
 6. Setelah itu ekstrak file yang telah didownload pada langkah 4, lalu masuk ke folder ```connect-to-aws-greengrass-esp32-devkitc/freertos/tools/aws_config_quick_start/```:
 
 	```
+	$ cd ~/Downloads -> bebas mau ekstraknya di folder mana
 	$ unzip connect-to-aws-greengrass-esp32-devkitc.zip
 	$ cd connect-to-aws-greengrass-esp32-devkitc/freertos/tools/aws_config_quick_start/
 	```
@@ -55,4 +57,11 @@
 	- Menyambungkan secara otomatis IoT policy -> certificate and certificate -> AWS IoT thing
 	- setup secara otomatis aws_clientcredential.h file dengan AWS IoT endpoint, Wi-Fi SSID, dan credentials
 	- Format secara otomatis certificate dan private key, secara otomatis langsung nulis di dalam file aws_clientcredential.h
+	```
+
+9. Jika ingin mengganti seperti password wifi dan lain lain
+
+	```
+	$ cd connect-to-aws-greengrass-esp32-devkitc/freertos/tests/include/
+	$ nano aws_clientcredential.h -> bebas pake text editor apa aja
 	```
