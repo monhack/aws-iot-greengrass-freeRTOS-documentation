@@ -37,11 +37,12 @@
 	```
 
 3. Setelah itu baru ```cmake``` programnya
+	
 	<b>Note: [Cmake buat windows](https://docs.aws.amazon.com/freertos/latest/userguide/building-cmake.html)</b>
 
 	```
 	$ cd ~/Downloads/freertos/
-	$ sudo cmake -DVENDOR=espressif -DBOARD=esp32_devkitc -DCOMPILER=xtensa-esp32 -DCMAKE_TOOLCHAIN_FILE='~/Downloads/FreeRTOS/tools/cmake/toolchains/xtensa-esp32.cmake' -DCMAKE_C_COMPILER='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc' -DCMAKE_CXX_COMPILER='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++' -DCMAKE_ASM_COMPILER='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc' -DAFR_COMPILER_CC='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc' -DAFR_COMPILER_CXX='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++' -DCMAKE_MAKE_PROGRAM='/home/{username}/.espressif/tools/ninja' -DAFR_BOARD="espressif.esp32_devkitc" -S . -B esp32_gg_1 -> (nama-directorynya-yang-mau-dibuat)
+	$ sudo cmake -DVENDOR=espressif -DBOARD=esp32_devkitc -DCOMPILER=xtensa-esp32 -DCMAKE_TOOLCHAIN_FILE='~/Downloads/FreeRTOS/tools/cmake/toolchains/xtensa-esp32.cmake' -DCMAKE_C_COMPILER='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc' -DCMAKE_CXX_COMPILER='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++' -DCMAKE_ASM_COMPILER='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc' -DAFR_COMPILER_CC='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc' -DAFR_COMPILER_CXX='~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++' -DCMAKE_MAKE_PROGRAM='/home/{username}/.espressif/tools/ninja' -DAFR_BOARD='espressif.esp32_devkitc' -S . -B esp32_gg_1 -> (nama-directorynya-yang-mau-dibuat)
 	```
 
 4. Setelah dicmake, kita setting terlebih dahulu path untuk ```CC, CXX dan ASM``` (harus masuk ke superuser karena ada beberapa file yang diubah dan harus menjadi root)
@@ -61,6 +62,7 @@
 	```
 
 7. Sambungkan ESP32 dengan PC/laptop, lalu lakukan hal berikut
+	
 	<b>Note: Jalankan program trafficLight.py pada raspi agar freertos bisa ngirim data tanpa internet. Perintah ada pada modul4 langkah 11</b>
 
 	```
